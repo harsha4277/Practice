@@ -1,0 +1,23 @@
+package practice;
+
+import java.util.Scanner;
+
+public class CheckingValueInBetween {
+public static void main(String[] args) {
+	
+	valueInBetween();
+}
+
+private static void valueInBetween() {
+	// TODO Auto-generated method stub
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter your value: ");
+	float f = sc.nextFloat();
+	if(f>=11 & f<=23) {
+		System.out.println(f + " value is located between 11 and 23");
+	}
+	else
+		System.out.println(f + " value is not located between 11 and 23");
+	sc.close();
+}
+}

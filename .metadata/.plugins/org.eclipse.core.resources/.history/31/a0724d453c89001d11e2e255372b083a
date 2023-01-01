@@ -1,0 +1,23 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Conversion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		conversion();
+
+	}
+
+	private static void conversion() {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter amount in rupees:");
+		double b=sc.nextDouble();
+		System.out.println("amount in paisa:"+(int)(b*100)+" paisa");
+		
+	}
+
+}

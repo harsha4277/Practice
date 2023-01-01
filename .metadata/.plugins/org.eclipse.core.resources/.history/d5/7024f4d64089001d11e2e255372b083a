@@ -1,0 +1,29 @@
+package practice;
+
+import java.util.Scanner;
+
+public class GratestNumber {
+	public static void main(String[] args) {
+		gratest();
+	}
+
+	private static void gratest() {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your first value: ");
+		double a=sc.nextDouble();
+		System.out.println("Enter your second value: ");
+		double b=sc.nextDouble();
+		System.out.println("Enter your third value: ");
+		double c=sc.nextDouble();
+		if(a>b & a>c)
+			System.out.println(a + "is the greatest value");
+		else if(a<b & b>c)
+			System.out.println(b + "is the greatest value");
+		else
+			System.out.println(c + "is the greatest value");
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,24 @@
+package practice;
+
+import java.util.Scanner;
+
+public class SumOfDigits {
+	public static void main(String[] args) {
+		sum();
+	}
+
+	private static void sum() {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your number: ");
+		int a = sc.nextInt();
+		int sum=0;
+		while(a>0) {
+			int n = a%10;
+			sum = sum+n;
+			a=a/10;
+		}
+		System.out.println("the sum of "+a+" is :"+sum);
+	}
+
+}

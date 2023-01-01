@@ -1,0 +1,27 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		factorial();
+
+	}
+
+	private static void factorial() {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter a value: ");
+		int a = sc.nextInt();
+		for(int i=0;i<a;i++)
+		{
+			a=a*(a-i);
+		}
+		System.out.println(a);
+		sc.close();
+	}
+
+}
